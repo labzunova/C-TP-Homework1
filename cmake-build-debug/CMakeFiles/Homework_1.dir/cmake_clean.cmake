@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Homework_1.dir/consoleCommunication.c.obj"
   "CMakeFiles/Homework_1.dir/main.c.obj"
-  "CMakeFiles/Homework_1.dir/structReading.c.obj"
   "CMakeFiles/Homework_1.dir/waybillSplit.c.obj"
   "Homework_1.exe"
   "Homework_1.exe.manifest"

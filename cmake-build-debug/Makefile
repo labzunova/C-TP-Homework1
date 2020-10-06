@@ -142,6 +142,33 @@ Homework_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/build
 .PHONY : Homework_1/fast
 
+consoleCommunication.obj: consoleCommunication.c.obj
+
+.PHONY : consoleCommunication.obj
+
+# target to build an object file
+consoleCommunication.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/consoleCommunication.c.obj
+.PHONY : consoleCommunication.c.obj
+
+consoleCommunication.i: consoleCommunication.c.i
+
+.PHONY : consoleCommunication.i
+
+# target to preprocess a source file
+consoleCommunication.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/consoleCommunication.c.i
+.PHONY : consoleCommunication.c.i
+
+consoleCommunication.s: consoleCommunication.c.s
+
+.PHONY : consoleCommunication.s
+
+# target to generate assembly for a file
+consoleCommunication.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/consoleCommunication.c.s
+.PHONY : consoleCommunication.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -168,33 +195,6 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/main.c.s
 .PHONY : main.c.s
-
-structReading.obj: structReading.c.obj
-
-.PHONY : structReading.obj
-
-# target to build an object file
-structReading.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/structReading.c.obj
-.PHONY : structReading.c.obj
-
-structReading.i: structReading.c.i
-
-.PHONY : structReading.i
-
-# target to preprocess a source file
-structReading.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/structReading.c.i
-.PHONY : structReading.c.i
-
-structReading.s: structReading.c.s
-
-.PHONY : structReading.s
-
-# target to generate assembly for a file
-structReading.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/structReading.c.s
-.PHONY : structReading.c.s
 
 waybillSplit.obj: waybillSplit.c.obj
 
@@ -232,12 +232,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Homework_1
+	@echo ... consoleCommunication.obj
+	@echo ... consoleCommunication.i
+	@echo ... consoleCommunication.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... structReading.obj
-	@echo ... structReading.i
-	@echo ... structReading.s
 	@echo ... waybillSplit.obj
 	@echo ... waybillSplit.i
 	@echo ... waybillSplit.s

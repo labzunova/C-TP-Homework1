@@ -74,16 +74,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/consoleCommunication.c">
+			<Option target="Homework_1"/>
+		</Unit>
+		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/consoleCommunication.h">
+			<Option target="Homework_1"/>
+		</Unit>
 		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/main.c">
 			<Option target="Homework_1"/>
 		</Unit>
 		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/productStruct.h">
-			<Option target="Homework_1"/>
-		</Unit>
-		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/structReading.c">
-			<Option target="Homework_1"/>
-		</Unit>
-		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/structReading.h">
 			<Option target="Homework_1"/>
 		</Unit>
 		<Unit filename="D:/projects/C,C++ TechPark/Homework 1/waybillSplit.c">

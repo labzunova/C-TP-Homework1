@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/projects/C,C++ TechPark/Homework 1/main.c
+D:/projects/C,C++ TechPark/Homework 1/consoleCommunication.c
 stdio.h
 -
-malloc.h
--
-structReading.h
-D:/projects/C,C++ TechPark/Homework 1/structReading.h
 productStruct.h
 D:/projects/C,C++ TechPark/Homework 1/productStruct.h
 
-D:/projects/C,C++ TechPark/Homework 1/productStruct.h
-
-D:/projects/C,C++ TechPark/Homework 1/structReading.h
-productStruct.h
 D:/projects/C,C++ TechPark/Homework 1/productStruct.h
 

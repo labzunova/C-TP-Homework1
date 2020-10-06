@@ -11,8 +11,10 @@ int countReading(){
     return count;
 }
 
-productStruct structReading(){
+productStruct structReading(int i){
     struct productStruct* product;
+
+    printf_s("       %d product:\n",i+1);
 
     printf_s("Enter product vendor code: \n");
     while ((scanf("%d",&product->vendorCode) != 1)||(&product->vendorCode <= 0)){            //TODO: integer check
@@ -20,7 +22,7 @@ productStruct structReading(){
         while(getchar() != '\n'); // Чистим буфер
     };
 
-    printf_s("Enter amount of this product: \n");
+    printf_s("Enter an amount of this product: \n");
     while ((scanf("%d",&product->amount) != 1)||(&product->amount < 0)){            //TODO: integer check
         printf_s(" !Enter a POSITIVE INTEGER number of products: \n");
         while(getchar() != '\n');
@@ -39,5 +41,13 @@ productStruct structReading(){
     };
 
     return *product;
+}
+
+void newWaybillOutput(int count, struct productStruct * waybill, char num){
+    printf_s("\n       %c new waybill:\n", num);
+    for (int i = 0; i < count; i++){
+        printf_s("%d: Vendor code: %d\n   Price: %f", i+1, waybill[i].vendorCode, waybill[i].price);
+    }
+    printf_s("\n");
 }
 

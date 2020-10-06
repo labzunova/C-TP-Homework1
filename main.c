@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <malloc.h>
 #include "consoleCommunication.h"
-#include "productStruct.h"
 #include "waybillSplit.h"
 
 int main() {
@@ -11,14 +9,16 @@ int main() {
     waybill = (productStruct*) malloc(count * sizeof(productStruct));
 
     for (int i = 0; i < count; i++){
-        //printf("%d product:\n",i+1);
-        waybill[0] = structReading();
+        waybill[i] = structReading(i);
     }
 
     productStruct *firstNew, *secondNew;
-    if (split(firstNew, secondNew)){
+    firstNew = (productStruct*) malloc(count * sizeof(productStruct));
+    secondNew = (productStruct*) malloc(count * sizeof(productStruct));
+    int firstCount = (split(waybill, firstNew, secondNew, count)), secondCount = count - firstCount;
 
-    }
+    newWaybillOutput(firstCount, firstNew, '1');
+    newWaybillOutput(secondCount, secondNew, '2');
 
     free(firstNew);
     free(secondNew);

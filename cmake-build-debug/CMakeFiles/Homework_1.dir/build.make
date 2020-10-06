@@ -89,18 +89,18 @@ CMakeFiles/Homework_1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/main.c.s"
 	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\main.c" -o CMakeFiles\Homework_1.dir\main.c.s
 
-CMakeFiles/Homework_1.dir/structReading.c.obj: CMakeFiles/Homework_1.dir/flags.make
-CMakeFiles/Homework_1.dir/structReading.c.obj: ../structReading.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Homework_1.dir/structReading.c.obj"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Homework_1.dir\structReading.c.obj   -c "D:\projects\C,C++ TechPark\Homework 1\structReading.c"
+CMakeFiles/Homework_1.dir/consoleCommunication.c.obj: CMakeFiles/Homework_1.dir/flags.make
+CMakeFiles/Homework_1.dir/consoleCommunication.c.obj: ../consoleCommunication.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Homework_1.dir/consoleCommunication.c.obj"
+	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Homework_1.dir\consoleCommunication.c.obj   -c "D:\projects\C,C++ TechPark\Homework 1\consoleCommunication.c"
 
-CMakeFiles/Homework_1.dir/structReading.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Homework_1.dir/structReading.c.i"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\projects\C,C++ TechPark\Homework 1\structReading.c" > CMakeFiles\Homework_1.dir\structReading.c.i
+CMakeFiles/Homework_1.dir/consoleCommunication.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Homework_1.dir/consoleCommunication.c.i"
+	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\projects\C,C++ TechPark\Homework 1\consoleCommunication.c" > CMakeFiles\Homework_1.dir\consoleCommunication.c.i
 
-CMakeFiles/Homework_1.dir/structReading.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/structReading.c.s"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\structReading.c" -o CMakeFiles\Homework_1.dir\structReading.c.s
+CMakeFiles/Homework_1.dir/consoleCommunication.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/consoleCommunication.c.s"
+	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\consoleCommunication.c" -o CMakeFiles\Homework_1.dir\consoleCommunication.c.s
 
 CMakeFiles/Homework_1.dir/waybillSplit.c.obj: CMakeFiles/Homework_1.dir/flags.make
 CMakeFiles/Homework_1.dir/waybillSplit.c.obj: ../waybillSplit.c
@@ -118,14 +118,14 @@ CMakeFiles/Homework_1.dir/waybillSplit.c.s: cmake_force
 # Object files for target Homework_1
 Homework_1_OBJECTS = \
 "CMakeFiles/Homework_1.dir/main.c.obj" \
-"CMakeFiles/Homework_1.dir/structReading.c.obj" \
+"CMakeFiles/Homework_1.dir/consoleCommunication.c.obj" \
 "CMakeFiles/Homework_1.dir/waybillSplit.c.obj"
 
 # External object files for target Homework_1
 Homework_1_EXTERNAL_OBJECTS =
 
 Homework_1.exe: CMakeFiles/Homework_1.dir/main.c.obj
-Homework_1.exe: CMakeFiles/Homework_1.dir/structReading.c.obj
+Homework_1.exe: CMakeFiles/Homework_1.dir/consoleCommunication.c.obj
 Homework_1.exe: CMakeFiles/Homework_1.dir/waybillSplit.c.obj
 Homework_1.exe: CMakeFiles/Homework_1.dir/build.make
 Homework_1.exe: CMakeFiles/Homework_1.dir/linklibs.rsp
