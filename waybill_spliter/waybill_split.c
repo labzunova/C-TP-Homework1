@@ -5,7 +5,7 @@
         if (first < last)
         {
             int left = first, right = last;
-            float middle = arr[(left + right) / 2].pri  ce;
+            float middle = arr[(left + right) / 2].price;
             do
             {
                 while (arr[left].price > middle) left++;
