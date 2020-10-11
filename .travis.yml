@@ -36,8 +36,6 @@ script:
   - cd build
   - ls
   - cmake ../
-  - ls ../Google_tests
-  - ls
   - cd ../Google_tests
   - ls
   - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes chmod a+x ./tests.cpp
