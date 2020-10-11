@@ -38,6 +38,7 @@ script:
   - cmake ../
   - cd ../Google_tests
   - ls
+  - valgrind cmake-build-debug/Google_tests/Google_Tests_run
   - chmod 775 ./tests.cpp
   - valgrind ./tests
   - make prog
