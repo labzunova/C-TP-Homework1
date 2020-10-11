@@ -37,7 +37,8 @@ script:
   - ls
   - cmake ../
   - cd Google_tests
-  - ./tests.cpp
+  - ls
+  - ./tests
   - valgrind --tool=memcheck --leak-check=full tests
   - make tests
   - tests
