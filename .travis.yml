@@ -36,12 +36,9 @@ script:
   - cd build
   - ls
   - cmake ../
-  - ls
   - cd ../Google_tests
   - ls
-  - sudo -i ./tests.cpp
-  - valgrind --tool=memcheck --leak-check=full tests
-  - make tests
-  - tests
+  - ./tests.cpp
+  - valgrind ./tests
   - make prog
   - cat Google_tests/tests | valgrind ./prog >> test_res.dat
