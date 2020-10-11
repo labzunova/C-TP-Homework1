@@ -3,7 +3,7 @@ extern "C" {
 #include "../waybill_spliter/waybill_split.h"
 }
 
-TEST( sorting_tests,one_to_twenty ) // проверка сортировки последовательноти от 1 до 20
+TEST( tests,sorting_tests_one_to_twenty ) // проверка сортировки последовательноти от 1 до 20
 {
     auto *arr_to_sort = ( product_struct* ) malloc( 20 * sizeof( product_struct ) );
     for ( int i = 0; i < 20; i++ ) arr_to_sort[i].price = i;
@@ -12,7 +12,7 @@ TEST( sorting_tests,one_to_twenty ) // проверка сортировки п�
     free( arr_to_sort );
 }
 
-TEST( sorting_tests,random ) // проверка, сходится ли результат quick_sort с отсортированным другим способом таким же массивом(в данном случае bubble sort)
+TEST( tests,sorting_tests_random ) // проверка, сходится ли результат quick_sort с отсортированным другим способом таким же массивом(в данном случае bubble sort)
 {
     auto *arr_to_quicksort = ( product_struct* ) malloc( 20 * sizeof( product_struct ) );
     float arr_to_bubblesort[20];
@@ -40,7 +40,7 @@ TEST( sorting_tests,random ) // проверка, сходится ли резу
 }
 
 
-TEST( split_tests, A ) // проверка правильности разделения на две накладные накладной, состоящей из цен от 1 до 10
+TEST( tests, split_test ) // проверка правильности разделения на две накладные накладной, состоящей из цен от 1 до 10
 {
     auto * arr_to_split = ( product_struct* ) malloc(10 * sizeof( product_struct ) );
     auto * first_new = ( product_struct* ) malloc( 10 * sizeof( product_struct ) );
