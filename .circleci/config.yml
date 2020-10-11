@@ -21,10 +21,10 @@ jobs:
           command: 'apt-get update && sudo apt-get install -y cmake'
       - run:
           name: Start CppCheck
-          command: 'cppcheck iz-1/src/* iz-1/include/* iz-1/Google_tests/AbsoluteDateTest'
+          command: 'cppcheck Homework1/waybill_spliter/* Homework1/Google_tests/tests'
       - run:
           name: Start Tests
-          command: 'valgrind iz-1/cmake-build-debug/Google_tests/Google_Tests_run'
+          command: 'valgrind Homework1/cmake-build-debug/Google_tests/Google_Tests_run'
       - run:
           name: Creating Build Files
           command: 'cmake -H. -Bbuild'
