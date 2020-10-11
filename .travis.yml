@@ -36,6 +36,7 @@ script:
   - cd build
   - ls
   - cmake ../
+  - cmake ../Google_tests
   - make Google_tests/tests.cpp
   - make prog
   - cat Google_tests/tests | valgrind ./prog >> test_res.dat
