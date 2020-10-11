@@ -42,8 +42,3 @@ script:
   - ls
   - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes chmod a+x ./tests.cpp
   - chmod a+x ./tests.cpp
-  - sudo apt-get install lib32z1
-  - valgrind --leak-check=full -q ../Google_tests/tests.cpp
-  - valgrind ../cmake-build-debug/Google_tests/Google_Tests_run
-  - cd ../Google_tests
-  - cat Google_tests/tests | valgrind ./prog >> test_res.dat
