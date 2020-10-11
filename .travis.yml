@@ -37,7 +37,7 @@ script:
   - ls
   - cmake ../
   - ls ../Google_tests
-  - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes ./tests.out
+  - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes ./tests
   - sudo apt-get install lib32z1
   - ls Google_tests
   - valgrind Google_tests/Google_Tests_run
