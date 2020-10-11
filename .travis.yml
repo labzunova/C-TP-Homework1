@@ -37,7 +37,7 @@ script:
   - ls
   - cmake ../
   - ls
-  - /Google_tests/Google_Tests_run
+  - Google_tests/Google_Tests_run
   - cd ../Google_tests
   - ls
   - valgrind cmake-build-debug/Google_tests/Google_Tests_run
