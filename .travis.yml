@@ -40,7 +40,7 @@ script:
   - ls
   - cd ../Google_tests
   - ls
-  - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes ./tests
+  - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes ./tests.cpp
   - sudo apt-get install lib32z1
   - valgrind Google_tests/Google_Tests_run
   - valgrind --leak-check=full -q ../Google_tests/tests.cpp
