@@ -13,8 +13,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
-
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: configure
@@ -25,3 +24,7 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
+    - name: Install gtest manually
+      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
+    - name: Run Test
+      run: /Google_tests/tests.c
