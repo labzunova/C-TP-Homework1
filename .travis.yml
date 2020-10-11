@@ -29,6 +29,13 @@ install:
   - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
   - which valgrind
   - cd "${TRAVIS_BUILD_DIR}"
+      # Google tests
+  - sudo apt-get install libgtest-dev
+  - cd /usr/src/gtest
+  - sudo cmake .
+  - sudo make
+  - sudo cp *.a /usr/lib
+  - cd -
 
 script:
   - cppcheck waybill_spliter/waybill_split.h waybill_spliter/console_communication.h waybill_spliter/product_struct.h waybill_spliter/waybill_split.c waybill_spliter/console_communication.c
