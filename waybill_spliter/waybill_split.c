@@ -1,6 +1,6 @@
     #include "waybill_split.h"
 
-    void quick_sort(product_struct *arr, int first, int last)
+    void quick_sort( product_struct *arr, int first, int last )
     {
         if (first < last)
         {
