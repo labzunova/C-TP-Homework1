@@ -1,14 +1,9 @@
 name: cppcheck-action
 on: 
-  push:
-    branches: 
-      - master
-        - code
-  pull_request:
-    branches:
-      - master
-        - code
-
+ push:
+  branches: [ master ]
+ pull_request:
+  branches: [ master ]
 
 jobs:
   build:
