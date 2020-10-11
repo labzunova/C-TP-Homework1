@@ -31,7 +31,7 @@ install:
   - cd "${TRAVIS_BUILD_DIR}"
 
 script:
-  - cppcheck waybill_spliter.h console_communication.h product_struct.h waybill_spliter.c console_communication.c
+  - cppcheck waybill_spliter/waybill_split.h waybill_spliter/console_communication.h waybill_spliter/product_struct.h waybill_spliter/waybill_split.c waybill_spliter/console_communication.c
   - mkdir build
   - cd build
   - ls
