@@ -39,7 +39,7 @@ script:
   - ls
   - cd ../Google_tests
   - ls
-  - sudo tee -a ./tests.cpp
+  - sudo -i ./tests.cpp
   - valgrind --tool=memcheck --leak-check=full tests
   - make tests
   - tests
