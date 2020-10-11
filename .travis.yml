@@ -2,7 +2,7 @@
 dist:     trusty
 sudo:     required
 
-language: cpp
+language: c
 
 os:
   - linux
@@ -39,7 +39,7 @@ script:
   - ls
   - cd ../Google_tests
   - ls
-  - ./tests
+  - ./tests.cpp
   - valgrind --tool=memcheck --leak-check=full tests
   - make tests
   - tests
