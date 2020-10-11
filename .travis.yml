@@ -37,10 +37,11 @@ script:
   - ls
   - cmake ../
   - ls
+  - valgrind ../cmake-build-debug/Google_tests/Google_Tests_run
   - valgrind Google_tests/Google_Tests_run.exe
   - cd ../Google_tests
   - ls
-  - valgrind cmake-build-debug/Google_tests/Google_Tests_run
+  - valgrind ../cmake-build-debug/Google_tests/Google_Tests_run
   - chmod 775 ./tests.cpp
   - valgrind ./tests
   - make prog
