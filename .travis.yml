@@ -36,7 +36,7 @@ script:
   - cd build
   - ls
   - cmake ../
-  - cat Google_tests
+  - cd Google_tests
   - cmake ../
   - make tests
   - make prog
