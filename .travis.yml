@@ -38,7 +38,8 @@ script:
   - cmake ../
   - cd Google_tests
   - valgrind --tool=memcheck --leak-check=full tests
-  - sh tests
+  - cmake ../
   - make tests
+  - tests
   - make prog
   - cat Google_tests/tests | valgrind ./prog >> test_res.dat
