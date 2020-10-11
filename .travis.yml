@@ -29,13 +29,6 @@ install:
   - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
   - which valgrind
   - cd "${TRAVIS_BUILD_DIR}"
-      # Google tests
-  - sudo apt-get install libgtest-dev
-  - cd /usr/src/gtest
-  - sudo cmake .
-  - sudo make
-  - sudo cp *.a /usr/lib
-  - cd -
 
 script:
   - cppcheck waybill_spliter/waybill_split.h waybill_spliter/console_communication.h waybill_spliter/product_struct.h waybill_spliter/waybill_split.c waybill_spliter/console_communication.c
@@ -46,4 +39,5 @@ script:
   - cd ../Google_tests
   - ls
   - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes chmod a+x ./tests.cpp
-  - chmod a+x ./tests.cpp --gtest_shuffle
+  - valgrind --trace-children=yes ./tests.cpp
+  - chmod a+x ./tests.cpp
