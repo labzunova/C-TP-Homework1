@@ -36,12 +36,14 @@ script:
   - cd build
   - ls
   - cmake ../
+  - sudo apt-get install lib32z1
   - ls Google_tests
+  - valgrind Google_tests/Google_Tests_run
   - valgrind --leak-check=full -q ../Google_tests/tests
   - valgrind ../cmake-build-debug/Google_tests/Google_Tests_run
   - cd ../Google_tests
   - ls
-  - valgrind ../cmake-build-debug/Google_tests/Google_Tests_run
+  - valgrind tests
   - chmod 775 ./tests.cpp
   - valgrind ./tests
   - make prog
