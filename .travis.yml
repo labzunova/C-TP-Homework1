@@ -36,8 +36,8 @@ script:
   - cd build
   - ls
   - cmake ../
-  - valgrind ./Google_tests/tests.cpp
   - cd Google_tests
+  - valgrind —tool=memcheck tests
   - sh tests
   - make tests
   - make prog
