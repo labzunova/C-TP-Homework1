@@ -1,11 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Homework_1.dir/consoleCommunication.c.obj"
-  "CMakeFiles/Homework_1.dir/main.c.obj"
-  "CMakeFiles/Homework_1.dir/waybillSplit.c.obj"
-  "Homework_1.exe"
-  "Homework_1.exe.manifest"
-  "Homework_1.pdb"
-  "libHomework_1.dll.a"
+  "CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj"
+  "libHomework_1.a"
+  "libHomework_1.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -76,66 +76,36 @@ include CMakeFiles/Homework_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Homework_1.dir/flags.make
 
-CMakeFiles/Homework_1.dir/main.c.obj: CMakeFiles/Homework_1.dir/flags.make
-CMakeFiles/Homework_1.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Homework_1.dir/main.c.obj"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Homework_1.dir\main.c.obj   -c "D:\projects\C,C++ TechPark\Homework 1\main.c"
+CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj: CMakeFiles/Homework_1.dir/flags.make
+CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj: CMakeFiles/Homework_1.dir/includes_C.rsp
+CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj: ../waybill_spliter/waybill_split.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj"
+	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Homework_1.dir\waybill_spliter\waybill_split.c.obj   -c "D:\projects\C,C++ TechPark\Homework 1\waybill_spliter\waybill_split.c"
 
-CMakeFiles/Homework_1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Homework_1.dir/main.c.i"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\projects\C,C++ TechPark\Homework 1\main.c" > CMakeFiles\Homework_1.dir\main.c.i
+CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.i"
+	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\projects\C,C++ TechPark\Homework 1\waybill_spliter\waybill_split.c" > CMakeFiles\Homework_1.dir\waybill_spliter\waybill_split.c.i
 
-CMakeFiles/Homework_1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/main.c.s"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\main.c" -o CMakeFiles\Homework_1.dir\main.c.s
-
-CMakeFiles/Homework_1.dir/consoleCommunication.c.obj: CMakeFiles/Homework_1.dir/flags.make
-CMakeFiles/Homework_1.dir/consoleCommunication.c.obj: ../consoleCommunication.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Homework_1.dir/consoleCommunication.c.obj"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Homework_1.dir\consoleCommunication.c.obj   -c "D:\projects\C,C++ TechPark\Homework 1\consoleCommunication.c"
-
-CMakeFiles/Homework_1.dir/consoleCommunication.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Homework_1.dir/consoleCommunication.c.i"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\projects\C,C++ TechPark\Homework 1\consoleCommunication.c" > CMakeFiles\Homework_1.dir\consoleCommunication.c.i
-
-CMakeFiles/Homework_1.dir/consoleCommunication.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/consoleCommunication.c.s"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\consoleCommunication.c" -o CMakeFiles\Homework_1.dir\consoleCommunication.c.s
-
-CMakeFiles/Homework_1.dir/waybillSplit.c.obj: CMakeFiles/Homework_1.dir/flags.make
-CMakeFiles/Homework_1.dir/waybillSplit.c.obj: ../waybillSplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Homework_1.dir/waybillSplit.c.obj"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Homework_1.dir\waybillSplit.c.obj   -c "D:\projects\C,C++ TechPark\Homework 1\waybillSplit.c"
-
-CMakeFiles/Homework_1.dir/waybillSplit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Homework_1.dir/waybillSplit.c.i"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\projects\C,C++ TechPark\Homework 1\waybillSplit.c" > CMakeFiles\Homework_1.dir\waybillSplit.c.i
-
-CMakeFiles/Homework_1.dir/waybillSplit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/waybillSplit.c.s"
-	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\waybillSplit.c" -o CMakeFiles\Homework_1.dir\waybillSplit.c.s
+CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.s"
+	D:\MinGW\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\projects\C,C++ TechPark\Homework 1\waybill_spliter\waybill_split.c" -o CMakeFiles\Homework_1.dir\waybill_spliter\waybill_split.c.s
 
 # Object files for target Homework_1
 Homework_1_OBJECTS = \
-"CMakeFiles/Homework_1.dir/main.c.obj" \
-"CMakeFiles/Homework_1.dir/consoleCommunication.c.obj" \
-"CMakeFiles/Homework_1.dir/waybillSplit.c.obj"
+"CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj"
 
 # External object files for target Homework_1
 Homework_1_EXTERNAL_OBJECTS =
 
-Homework_1.exe: CMakeFiles/Homework_1.dir/main.c.obj
-Homework_1.exe: CMakeFiles/Homework_1.dir/consoleCommunication.c.obj
-Homework_1.exe: CMakeFiles/Homework_1.dir/waybillSplit.c.obj
-Homework_1.exe: CMakeFiles/Homework_1.dir/build.make
-Homework_1.exe: CMakeFiles/Homework_1.dir/linklibs.rsp
-Homework_1.exe: CMakeFiles/Homework_1.dir/objects1.rsp
-Homework_1.exe: CMakeFiles/Homework_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Homework_1.exe"
+libHomework_1.a: CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj
+libHomework_1.a: CMakeFiles/Homework_1.dir/build.make
+libHomework_1.a: CMakeFiles/Homework_1.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libHomework_1.a"
+	$(CMAKE_COMMAND) -P CMakeFiles\Homework_1.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Homework_1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Homework_1.dir/build: Homework_1.exe
+CMakeFiles/Homework_1.dir/build: libHomework_1.a
 
 .PHONY : CMakeFiles/Homework_1.dir/build
 

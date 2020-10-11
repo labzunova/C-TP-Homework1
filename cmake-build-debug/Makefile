@@ -75,6 +75,40 @@ CMAKE_BINARY_DIR = "D:\projects\C,C++ TechPark\Homework 1\cmake-build-debug"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"D:\Program files\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"D:\Program files\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"D:\Program files\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"D:\Program files\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -96,6 +130,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"D:\Program files\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"D:\Program files\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,6 +176,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Homework1
+
+# Build rule for target.
+Homework1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Homework1
+.PHONY : Homework1
+
+# fast build rule for target.
+Homework1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/build
+.PHONY : Homework1/fast
+
+#=============================================================================
 # Target rules for targets named Homework_1
 
 # Build rule for target.
@@ -142,86 +201,154 @@ Homework_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/build
 .PHONY : Homework_1/fast
 
-consoleCommunication.obj: consoleCommunication.c.obj
+#=============================================================================
+# Target rules for targets named Google_Tests_run
 
-.PHONY : consoleCommunication.obj
+# Build rule for target.
+Google_Tests_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_Tests_run
+.PHONY : Google_Tests_run
+
+# fast build rule for target.
+Google_Tests_run/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
+.PHONY : Google_Tests_run/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googletest\CMakeFiles\gtest.dir\build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+waybill_spliter/console_communication.obj: waybill_spliter/console_communication.c.obj
+
+.PHONY : waybill_spliter/console_communication.obj
 
 # target to build an object file
-consoleCommunication.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/consoleCommunication.c.obj
-.PHONY : consoleCommunication.c.obj
+waybill_spliter/console_communication.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/console_communication.c.obj
+.PHONY : waybill_spliter/console_communication.c.obj
 
-consoleCommunication.i: consoleCommunication.c.i
+waybill_spliter/console_communication.i: waybill_spliter/console_communication.c.i
 
-.PHONY : consoleCommunication.i
+.PHONY : waybill_spliter/console_communication.i
 
 # target to preprocess a source file
-consoleCommunication.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/consoleCommunication.c.i
-.PHONY : consoleCommunication.c.i
+waybill_spliter/console_communication.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/console_communication.c.i
+.PHONY : waybill_spliter/console_communication.c.i
 
-consoleCommunication.s: consoleCommunication.c.s
+waybill_spliter/console_communication.s: waybill_spliter/console_communication.c.s
 
-.PHONY : consoleCommunication.s
+.PHONY : waybill_spliter/console_communication.s
 
 # target to generate assembly for a file
-consoleCommunication.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/consoleCommunication.c.s
-.PHONY : consoleCommunication.c.s
+waybill_spliter/console_communication.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/console_communication.c.s
+.PHONY : waybill_spliter/console_communication.c.s
 
-main.obj: main.c.obj
+waybill_spliter/main.obj: waybill_spliter/main.c.obj
 
-.PHONY : main.obj
+.PHONY : waybill_spliter/main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/main.c.obj
-.PHONY : main.c.obj
+waybill_spliter/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/main.c.obj
+.PHONY : waybill_spliter/main.c.obj
 
-main.i: main.c.i
+waybill_spliter/main.i: waybill_spliter/main.c.i
 
-.PHONY : main.i
+.PHONY : waybill_spliter/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/main.c.i
-.PHONY : main.c.i
+waybill_spliter/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/main.c.i
+.PHONY : waybill_spliter/main.c.i
 
-main.s: main.c.s
+waybill_spliter/main.s: waybill_spliter/main.c.s
 
-.PHONY : main.s
+.PHONY : waybill_spliter/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/main.c.s
-.PHONY : main.c.s
+waybill_spliter/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/main.c.s
+.PHONY : waybill_spliter/main.c.s
 
-waybillSplit.obj: waybillSplit.c.obj
+waybill_spliter/waybill_split.obj: waybill_spliter/waybill_split.c.obj
 
-.PHONY : waybillSplit.obj
+.PHONY : waybill_spliter/waybill_split.obj
 
 # target to build an object file
-waybillSplit.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/waybillSplit.c.obj
-.PHONY : waybillSplit.c.obj
+waybill_spliter/waybill_split.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/waybill_split.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj
+.PHONY : waybill_spliter/waybill_split.c.obj
 
-waybillSplit.i: waybillSplit.c.i
+waybill_spliter/waybill_split.i: waybill_spliter/waybill_split.c.i
 
-.PHONY : waybillSplit.i
+.PHONY : waybill_spliter/waybill_split.i
 
 # target to preprocess a source file
-waybillSplit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/waybillSplit.c.i
-.PHONY : waybillSplit.c.i
+waybill_spliter/waybill_split.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/waybill_split.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.i
+.PHONY : waybill_spliter/waybill_split.c.i
 
-waybillSplit.s: waybillSplit.c.s
+waybill_spliter/waybill_split.s: waybill_spliter/waybill_split.c.s
 
-.PHONY : waybillSplit.s
+.PHONY : waybill_spliter/waybill_split.s
 
 # target to generate assembly for a file
-waybillSplit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/waybillSplit.c.s
-.PHONY : waybillSplit.c.s
+waybill_spliter/waybill_split.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework1.dir\build.make CMakeFiles/Homework1.dir/waybill_spliter/waybill_split.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Homework_1.dir\build.make CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.s
+.PHONY : waybill_spliter/waybill_split.c.s
 
 # Help Target
 help:
@@ -230,17 +357,27 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... Google_Tests_run
+	@echo ... Homework1
 	@echo ... Homework_1
-	@echo ... consoleCommunication.obj
-	@echo ... consoleCommunication.i
-	@echo ... consoleCommunication.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... waybillSplit.obj
-	@echo ... waybillSplit.i
-	@echo ... waybillSplit.s
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... waybill_spliter/console_communication.obj
+	@echo ... waybill_spliter/console_communication.i
+	@echo ... waybill_spliter/console_communication.s
+	@echo ... waybill_spliter/main.obj
+	@echo ... waybill_spliter/main.i
+	@echo ... waybill_spliter/main.s
+	@echo ... waybill_spliter/waybill_split.obj
+	@echo ... waybill_spliter/waybill_split.i
+	@echo ... waybill_spliter/waybill_split.s
 .PHONY : help
 
 

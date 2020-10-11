@@ -4,14 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/projects/C,C++ TechPark/Homework 1/consoleCommunication.c" "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/CMakeFiles/Homework_1.dir/consoleCommunication.c.obj"
-  "D:/projects/C,C++ TechPark/Homework 1/main.c" "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/CMakeFiles/Homework_1.dir/main.c.obj"
-  "D:/projects/C,C++ TechPark/Homework 1/waybillSplit.c" "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/CMakeFiles/Homework_1.dir/waybillSplit.c.obj"
+  "D:/projects/C,C++ TechPark/Homework 1/waybill_spliter/waybill_split.c" "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/CMakeFiles/Homework_1.dir/waybill_spliter/waybill_split.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.
