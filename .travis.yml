@@ -41,4 +41,4 @@ script:
   - make tests
   - make prog
   - cat Google_tests/tests | valgrind ./prog >> test_res.dat
-  - valgrind ./tests
+  - valgrind Google_tests/tests
