@@ -30,12 +30,12 @@ install:
   - cd "${TRAVIS_BUILD_DIR}"
 
 script:
-  - cppcheck statictic_cpp.h statictic.h structs.h statistic.c contracts.c
+  - cppcheck waybill_spliter.h console_communication.h product_struct.h waybill_spliter.c console_communication.c
   - mkdir build
   - cd build
   - ls
   - cmake ../
   - make tests_gtest
   - make prog
-  - cat ../test_input | valgrind ./prog >> test_res.dat
+  - cat ../tests | valgrind ./prog >> test_res.dat
   - valgrind ./tests_gtest
