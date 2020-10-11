@@ -39,4 +39,4 @@ script:
   - cd ../Google_tests
   - ls
   - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes chmod a+x ./tests.cpp
-  - chmod a+x ./tests.cpp
+  - cat ./tests.cpp
