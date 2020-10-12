@@ -36,6 +36,8 @@ script:
   - cd build
   - ls
   - cmake ../
+  - chmod a+x ls Google_tests
+  - chmod a+x /Google_tests/Google_Tests_run
   - cd ../Google_tests
   - ls
   - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes chmod a+x ./tests.cpp
