@@ -1,4 +1,4 @@
-# Install script for directory: D:/projects/C,C++ TechPark/Homework1/Google_tests
+# Install script for directory: D:/projects/C,C++ TechPark/Homework 1/Google_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/projects/C,C++ TechPark/Homework1/cmake-build-debug/Google_tests/lib/cmake_install.cmake")
+  include("D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/Google_tests/lib/cmake_install.cmake")
 
 endif()
 

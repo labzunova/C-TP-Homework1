@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/projects/C,C++ TechPark/Homework1/Google_tests/tests.cpp" "D:/projects/C,C++ TechPark/Homework1/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/tests.cpp.obj"
+  "D:/projects/C,C++ TechPark/Homework 1/Google_tests/tests.cpp" "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "D:/projects/C,C++ TechPark/Homework1/cmake-build-debug/CMakeFiles/Homework_1.dir/DependInfo.cmake"
-  "D:/projects/C,C++ TechPark/Homework1/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "D:/projects/C,C++ TechPark/Homework1/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/CMakeFiles/Homework_1.dir/DependInfo.cmake"
+  "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "D:/projects/C,C++ TechPark/Homework 1/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
