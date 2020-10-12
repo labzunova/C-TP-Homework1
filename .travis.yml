@@ -36,7 +36,7 @@ script:
   - cd build
   - ls
   - cmake ../
-  - chmod a+x ls Google_tests
+  - ls Google_tests
   - chmod a+x /Google_tests/Google_Tests_run
   - cd ../Google_tests
   - ls
