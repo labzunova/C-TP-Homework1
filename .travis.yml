@@ -25,7 +25,7 @@ install:
   - cd googletest-release-1.7.0
   - sudo cmake -DBUILD_SHARED_LIBS=ON .
   - sudo make
-  - sudo apt-get install lib32z1
+  - sudo apt-get install libc:i386
   - sudo cp -a include/gtest /usr/include
   - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
   - which valgrind
@@ -39,8 +39,8 @@ script:
   - cmake ../
   - ls Google_tests
   - chmod a+x /Google_tests/Google_Tests_run
+  - /Google_tests/Google_Tests_run
   - cd ../Google_tests
   - ls
   - valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --leak-resolution=med  --track-origins=yes chmod a+x ./tests.cpp
-  - valgrind --trace-children=yes ./tests.cpp
   - chmod a+x ./tests.cpp
