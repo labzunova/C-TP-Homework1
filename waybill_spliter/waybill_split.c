@@ -2,7 +2,7 @@
 
     void quick_sort( product_struct *arr, int first, int last )
     {
-        if ( first < last )
+        if ( ( first < last ) && ( arr != nullptr ) )
         {
             int left = first, right = last;
             float middle = arr[( left + right ) / 2].price;
@@ -26,25 +26,29 @@
 
     int split( product_struct * waybill, product_struct * firstNew, product_struct * secondNew, int count )
     {
-        quick_sort( waybill, 0, count - 1 );
-
-        firstNew[0] = waybill[0];
-        secondNew[0] = waybill[1];
-        int firstCounter = 1, secondCounter = 1;
-        float firstSum = firstNew[0].price, secondSum = secondNew[0].price;
-        for ( int i = 2; i < count; i++ )
+        if ( ( waybill!=nullptr ) && ( firstNew!=nullptr )&&( secondNew!=nullptr ) )
         {
-            if ( firstSum < secondSum )
-            {
-                firstNew[firstCounter] = waybill[i];
-                firstSum += waybill[i].price;
-                firstCounter++;
-            } else {
-                secondNew[secondCounter] = waybill[i];
-                secondSum += waybill[i].price;
-                secondCounter++;
-                   }
-        }
+            quick_sort( waybill, 0, count - 1 );
 
-        return firstCounter;
+            firstNew[0] = waybill[0];
+            secondNew[0] = waybill[1];
+            int firstCounter = 1, secondCounter = 1;
+            float firstSum = firstNew[0].price, secondSum = secondNew[0].price;
+            for ( int i = 2; i < count; i++ )
+            {
+                if ( firstSum < secondSum )
+                {
+                    firstNew[firstCounter] = waybill[i];
+                    firstSum += waybill[i].price;
+                    firstCounter++;
+                } else {
+                    secondNew[secondCounter] = waybill[i];
+                    secondSum += waybill[i].price;
+                    secondCounter++;
+                }
+            }
+
+            return firstCounter;
+        } else
+            return 0;
     }
