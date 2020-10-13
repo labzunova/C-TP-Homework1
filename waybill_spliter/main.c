@@ -7,13 +7,13 @@ int main()
     int count = count_reading();
 
     product_struct *waybill;
-    waybill = ( product_struct* ) malloc(count * sizeof( product_struct ) );
+    if ( !waybill = ( product_struct* ) malloc(count * sizeof( product_struct ) ) ) cant_allocate( nullptr, nullptr, 0);
 
     for ( int i = 0; i < count; i++ ) waybill[i] = struct_reading(i);
 
     product_struct *first_new, *second_new;
-    first_new = ( product_struct* ) malloc( count * sizeof( product_struct ) );
-    second_new = ( product_struct* ) malloc(count * sizeof( product_struct ) );
+    if ( !first_new = ( product_struct* ) malloc( count * sizeof( product_struct ) ) ) cant_allocate( waybill, nullptr 1 );
+    if ( !second_new = ( product_struct* ) malloc(count * sizeof( product_struct ) ) ) cant_allocate( waybill, first_new, 1);
     int first_count = ( split( waybill, first_new, second_new, count ) ),
         second_count = count - first_count;
 
